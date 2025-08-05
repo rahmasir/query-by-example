@@ -16,3 +16,6 @@ spring:
     level:
       org.hibernate.SQL: DEBUG
       org.testcontainers: INFO
+#springdoc:
+#  swagger-ui:
+#    path: /docs
