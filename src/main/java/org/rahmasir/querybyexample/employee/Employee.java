@@ -1,10 +1,6 @@
 package org.rahmasir.querybyexample.employee;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 
@@ -12,7 +8,6 @@ import java.math.BigDecimal;
 @Table(name = "employees")
 public class Employee {
 
-    @jakarta.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
